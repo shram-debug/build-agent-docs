@@ -61,3 +61,33 @@ Please:
 
 6. List the open questions and decisions a human must make before build,
    and anything you could not determine.
+Expected output
+An inventory of reusable existing capability (the most valuable part)
+2–3 options with trade-offs and upgrade-safety assessment
+A recommendation with explicit reasoning
+Metadata inventory for the recommended option
+Data model sketch where relevant
+Open decisions for humans
+Validation checklist
+ Verify the "already exists" findings by opening at least one — reuse claims are the
+highest-value and highest-risk part of this output
+ Challenge the recommendation: does it default to custom where OOB would do?
+ Confirm upgrade-safety reasoning is specific, not boilerplate
+ Check the metadata inventory against your own expectation — what is missing?
+ Confirm it flagged what it could not determine
+Guardrails
+See GOVERNANCE.md. Specific to this recipe:
+
+Architecture stays human-owned. This is input to a decision, never the decision.
+It does not know your licensing entitlements. A proposal using a product you are not
+entitled to will look perfectly reasonable. Verify.
+Instance-specific. Findings reflect the instance it looked at — DEV drifts from PROD.
+Appendix
+Follow-up prompts
+What would make you change your recommendation?
+Which parts of this are reversible, and which are one-way doors?
+Break the recommended option into stories with acceptance criteria.
+Lessons learned
+Append-only. Date every entry.
+
+(empty)
