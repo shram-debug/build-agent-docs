@@ -46,3 +46,31 @@
 
 ```text
 [the prompt]
+Expected output
+What good looks like, so the user can tell whether they got it. Describe shape and
+content, not length.
+
+Validation checklist
+Non-negotiable. How does a human confirm this is correct? Make it concrete and finite —
+a checklist nobody can finish will not be used.
+
+ Spot-check N items against the platform
+ Confirm the output states what it could not check
+ [domain-specific check]
+Guardrails
+Risks specific to this recipe. Do not restate GOVERNANCE.md — link it and add only
+what is particular here.
+
+Appendix (optional)
+Follow-up prompts
+Useful next moves, only where they genuinely add something.
+
+Lessons learned
+Append-only. Date each entry and never silently rewrite history — the corrections
+are the most valuable content in the file, because they are the things the prompt alone
+does not teach.
+
+YYYY-MM-DD [what went wrong, what you changed, what to watch for]
+Example artifact
+Link, do not embed. Embedded examples go stale and bloat the page.
+
