@@ -56,3 +56,32 @@ Please:
    some or all of this, so we do not build something we already own.
 
 5. Tell me what you could NOT determine from the story or the instance.
+Expected output
+A ranked list of blocking questions, most design-changing first
+Unstated assumptions made explicit
+Gaps grouped by category (data, permissions, notifications, integration, edge cases)
+Any existing instance capability that overlaps the request
+An explicit statement of what could not be determined
+Good output includes at least one question nobody in the room had thought of.
+
+Validation checklist
+ Review each question — are any already answered elsewhere, or not actually blocking?
+ Confirm the "existing capability" findings are real by opening one of them
+ Sanity-check that it has not invented requirements the business never asked for
+ Confirm it stated what it could not determine
+Guardrails
+See GOVERNANCE.md. Specific to this recipe:
+
+It does not know your business context — licensing entitlements, roadmap, politics,
+or why a previous decision was made. Treat its questions as a checklist, not a verdict.
+Do not paste customer names, PII, or confidential commercial detail into the story text.
+Output is an input to a conversation with the requester, not a replacement for one.
+Appendix
+Follow-up prompts
+Of these questions, which three would most change the estimate if the
+answer went the wrong way?
+Rewrite this story as you would want to receive it as a developer.
+Lessons learned
+Append-only. Date every entry.
+
+(empty — add the first entry when this recipe is used on real work)
