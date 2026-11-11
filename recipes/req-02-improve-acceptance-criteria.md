@@ -1,5 +1,3 @@
----
-
 # 📄 File 6 of 14
 
 ### Path / filename: `recipes/req-02-improve-acceptance-criteria.md`
@@ -66,3 +64,31 @@ Please:
 
 5. Keep it proportionate - do not pad. Flag any criterion you think is
    unnecessary.
+Expected output
+Rewritten criteria in Given/When/Then, each independently testable
+Added coverage for negative, boundary, and permission cases
+Criteria flagged as unverifiable, with reasons
+Implied scope called out explicitly
+Validation checklist
+ Could QA execute each criterion without asking a follow-up question? If not, it is
+not finished
+ Check the added criteria against the actual business intent — reject anything the
+business did not ask for
+ Confirm the criteria match the roles that really exist, not assumed ones
+ Watch for volume: 30 criteria for a small story means it padded. Trim
+Guardrails
+See GOVERNANCE.md. Specific to this recipe:
+
+Scope creep risk is real. Added criteria must go back to the requester for
+agreement, not straight into the sprint.
+Output is softer than configuration analysis and harder to verify objectively — expect
+to edit it, and record what you changed in Lessons learned.
+Appendix
+Follow-up prompts
+Which of these criteria are likely to be the most expensive to implement,
+and why?
+Turn these criteria into QA test scenarios.
+Lessons learned
+Append-only. Date every entry.
+
+(empty)
